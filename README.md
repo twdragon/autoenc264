@@ -84,8 +84,8 @@ ROOT OPTIONS (super user privileges needed to use)
 
 ERROR CODES (excepting MEncoder and FAAC codes encapsulated)
 ===
-- 0 Success
-- 1 Warnings (in compatibility check mode)
-- 2 Terminated with no success (on error)
-- 3 Terminated by user request (e. a. output file exists)
+0. Success
+1. Warnings (in compatibility check mode)
+2. Terminated with no success (on error)
+3. Terminated by user request (e. a. output file exists)
 
