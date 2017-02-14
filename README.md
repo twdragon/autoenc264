@@ -1,11 +1,9 @@
 # autoenc264
 automated freeware video encoding script for GNU/Linux
 
-Usage: sh autoenc264.sh [options and keys] [input filename]
-autoenc264 is an automated script for encoding video files of all FFmpeg supporting formats to muxing-ready raw H.264/AAC streams and [optionally] simple
-automated MKV building. Script encodes the specified file in directory where it
-is placed in. In addition, usage of any other video and audio codecs could be
-achieved through special keys. As the result, the files with both video and audio streams will be rendered separately.
+Usage: `./autoenc264.sh [options and keys] [input filename]`
+`autoenc264` is an automated script for encoding video files of all FFmpeg-supported formats to muxing-ready raw H.264/AAC streams and [optionally] simple automated MKV building. Script encodes the specified file in directory where it
+is placed in. In addition, usage of any other video and audio codecs could be achieved through special keys. As the result, the files with both video and audio streams will be rendered separately.
 
 REQUIREMENTS
 ===
