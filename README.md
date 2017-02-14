@@ -9,14 +9,13 @@ REQUIREMENTS
 ===
 - Free disk space  approx. 3x(input file size) on partition where directory with autoenc264 is placed.
 - Software (for encoding):
-	- MPlayer and MEncoder with libx264 support option enabled
-	- FAAC standalone application
+	- **MPlayer** and **MEncoder** with `libx264` support option enabled
+	- **FAAC** standalone application
 - Software (optional):
-	- mkvmerge
-	- mediainfo
+	- `mkvmerge`
+	- `mediainfo`
 - File placement:
-	- Input file must be placed in the same directory
-    than the script to avoid any naming problems
+	- Input file must be placed in the same directory than the script to avoid any naming problems
 
 OPTIONS OVERVIEW
 ===
