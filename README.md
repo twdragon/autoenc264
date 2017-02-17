@@ -35,6 +35,24 @@ cally.
 audio and video streams after encoding. That file would be deleted after stream
 dump. But it also can be saved by user request.
 
+QUALITY OVERVIEW
+===
+`autoenc264` script uses standard `mencoder` CLI syntax to create the options line. The default options command line for video with **standard quality** looks like the following:
+
+`level=4.1:cabac=1:ref=12:deblock:analyse=0x3,0x113:me=umh:subme=10:psy=1:me_range=24:chroma_me=1:trellis=1:8x8dct=1:fast_pskip=0:chroma_qp_offset=-2:nr=0:interlaced=0:bframes=16:b_pyramid=2:b_adapt=2:weightp=2:weightb=1:keyint=240:keyint_min=23:constrained_intra=0:b_bias=0:scenecut=40:intra_refresh=0:rc_lookahead=150:mbtree=1:ratetol=1.0:qcomp=0.70:qpmin=4:qpmax=69:qpstep=4:cplxblur=20.0:qblur=0.5:nal_hrd=none:vbv_maxrate=50000:vbv_bufsize=62500`
+
+For **high quality** mode:
+
+`level=4.1:cabac=1:ref=10:deblock=1,-2,-1:analyse=0x3,0x133:me=umh:subme=10:psy=1:psy_rd=1.00,0.00:me_range=48:chroma_me=1:trellis=2:8x8dct=1:fast_pskip=0:chroma_qp_offset=-2:nr=0:interlaced=0:bframes=12:b_pyramid=2:b_adapt=2:weightp=2:weightb=1:keyint=240:keyint_min=23:constrained_intra=0:b_bias=0:scenecut=40:intra_refresh=0:rc_lookahead=80:mbtree=1:ratetol=1.0:qcomp=0.60:qpmin=10:qpmax=51:qpstep=4:cplxblur=20.0:qblur=0.5:nal_hrd=none:vbv_maxrate=50000:vbv_bufsize=62500`
+
+The default command line for audio encoding (**standard quality**):
+
+`-b 96 -q 100 --tns --mpeg-vers 4 -P -R 48000 -C 2 -X`
+
+**High quality** mode:
+
+`-b 160 -q 100 --tns --mpeg-vers 4 -P -R 48000 -C 2 -X`
+
 KEYS [default values shown in brackets]
 ===
 ## Information:
